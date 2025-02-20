@@ -1,1 +1,1 @@
-#start the game
+#start the game, yes
