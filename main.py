@@ -7,10 +7,13 @@ def get_computer_choice():
 
 def get_user_choice():
     scelta = input("Scegli tra sasso, carta o forbice: ").lower()
-    while scelta not in ['sasso', 'carta', 'forbice']:
-        print("Scelta non valida. Riprova.")
-        scelta = input("Scegli tra sasso, carta o forbice: ").lower()
-    return scelta
+    if scelta = "exit"
+        break 
+    else:
+        while scelta not in ['sasso', 'carta', 'forbice']:
+            print("Scelta non valida. Riprova.")
+            scelta = input("Scegli tra sasso, carta o forbice: ").lower()
+        return scelta
 
 def determina_vincitore(utente, computer):
     if utente == computer:
@@ -34,8 +37,11 @@ def main():
     risultato = determina_vincitore(user_choice, computer_choice)
     print(risultato)
 
-if __name__ == "__main__":
-    main()
+while True:
+    if __name__ == "__main__":
+        main()
+    
+
 
 print("if you have lost try again until you win")
 
