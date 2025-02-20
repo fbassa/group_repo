@@ -35,3 +35,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# the test is working in the right way
