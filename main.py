@@ -30,11 +30,14 @@ def main():
     print(f"Hai scelto: {user_choice}")
     print(f"Il computer ha scelto: {computer_choice}")
     
+
     risultato = determina_vincitore(user_choice, computer_choice)
     print(risultato)
 
 if __name__ == "__main__":
     main()
+
+print("if you have lost try again until you win")
 
 # questo è il branch creato da Marco
 # the test is working in the right way
