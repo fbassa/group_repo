@@ -18,9 +18,9 @@ def determina_vincitore(utente, computer):
     elif (utente == 'sasso' and computer == 'forbice') or \
          (utente == 'carta' and computer == 'sasso') or \
          (utente == 'forbice' and computer == 'carta'):
-        return "Hai vinto!"
+        return "Hai vinto!!!"
     else:
-        return "Hai perso!"
+        return "Hai perso!!!"
     
 def main():
     print("Benvenuto a Sasso, Carta, Forbice!")
