@@ -7,13 +7,10 @@ def get_computer_choice():
 
 def get_user_choice():
     scelta = input("Scegli tra sasso, carta o forbice: ").lower()
-    if scelta = "exit"
-        break 
-    else:
-        while scelta not in ['sasso', 'carta', 'forbice']:
-            print("Scelta non valida. Riprova.")
-            scelta = input("Scegli tra sasso, carta o forbice: ").lower()
-        return scelta
+    while scelta not in ['sasso', 'carta', 'forbice']:
+        print("Scelta non valida. Riprova.")
+        scelta = input("Scegli tra sasso, carta o forbice: ").lower()
+    return scelta
 
 def determina_vincitore(utente, computer):
     if utente == computer:
@@ -21,9 +18,9 @@ def determina_vincitore(utente, computer):
     elif (utente == 'sasso' and computer == 'forbice') or \
          (utente == 'carta' and computer == 'sasso') or \
          (utente == 'forbice' and computer == 'carta'):
-        return "Hai vinto!!!"
+        return "Hai vinto!"
     else:
-        return "Hai perso!!!"
+        return "Hai perso!"
     
 def main():
     print("Benvenuto a Sasso, Carta, Forbice!")
@@ -33,17 +30,10 @@ def main():
     print(f"Hai scelto: {user_choice}")
     print(f"Il computer ha scelto: {computer_choice}")
     
-
     risultato = determina_vincitore(user_choice, computer_choice)
     print(risultato)
 
-while True:
-    if __name__ == "__main__":
-        main()
-    
+if __name__ == "__main__":
+    main()
 
-
-print("if you have lost try again until you win")
-
-# questo è il branch creato da Marco
 # the test is working in the right way
